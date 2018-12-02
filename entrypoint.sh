@@ -70,7 +70,7 @@ cat <<-EOF > /v2raybin/v2ray-$V_VER-linux-$SYS_Bit/config.json
             ]
         },
         "streamSettings":{
-            "network":"ws",
+            "network":"tcp",
             "wsSettings":{
                 "path":"${V2_Path}"
             }
@@ -105,7 +105,7 @@ cat <<-EOF > /v2raybin/vmess.json
     "port": "443",
     "id": "${UUID}",
     "aid": "${AlterID}",			
-    "net": "ws",			
+    "net": "tcp",			
     "type": "none",			
     "host": "",			
     "path": "${V2_Path}",	
